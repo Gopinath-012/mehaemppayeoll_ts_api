@@ -5,8 +5,8 @@ export class SessionService {
   async getAllSessions(): Promise<SessionResponse[]> {
     const sessions = await prisma.session.findMany();
 
-    return sessions.map(
-      (session) => new SessionResponse(Number(session.SessionId), session.Name)
-    );
+    return sessions.map((session: any) => 
+  new SessionResponse(Number(session.SessionId), session.Name)
+);
   }
 }
