@@ -4,7 +4,7 @@ import { CommonResponse } from '../response/commonresponse';
 
 @Route('leavesessions')
 @Tags('Leave Session')
-export class SessionController {
+export class SessionController extends Controller {
   private service = new SessionService();
 
   @Get('/')
