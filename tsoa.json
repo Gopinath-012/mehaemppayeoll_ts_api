@@ -1,0 +1,23 @@
+{
+  "entryFile": "src/server.ts",
+  "controllerPathGlobs": [
+    "src/controllers/*.ts"
+  ],
+   "spec": {
+    "outputDirectory": "src/docs",
+    "specVersion": 3,
+    "spec": {
+      "info": {
+        "title": "Meha Infotech Payroll API",
+        "description": "All Payroll related APIs are documented here.",
+        "version": "1.0.0"
+      },
+      "schemes": ["http"],
+      "consumes": ["application/json"],
+      "produces": ["application/json"]
+    }
+  },
+  "routes": {
+    "routesDir": "src/routes"
+  }
+}
